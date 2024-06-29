@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="text/javascript" src="./app.js"></script>
+</head>
+<body onload='populateData()'>
+
+  <div class="summary">
+    <div class="summary-header">
+      <div class="summary-header-title">
+        Your Result
+      </div>
+
+      <div class="summary-header-mark-circle">
+        <div class="summary-header-mark"> 
+          <span style="font-weight: 700; font-size: 60px;"> 
+            76
+          </span>
+          <br>
+          <span style="opacity: 60%; font-size: 15px;">
+            of 100
+          </span>
+        </div>
+      </div>
+    
+      <div class="summary-header-subtitle">
+        Great
+      </div>
+
+      <div class="summary-header-resume">
+        You scored higher than 65% of the people who have taken these tests.
+      </div>
+    </div>
+  
+    <div class="summary-details">
+      <div class="summary-details-title">
+        Summary
+      </div>
+    
+      <div id="summary-details-rows">
+      </div>
+    
+      <button type="button">
+        Continue
+      </button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <br>
+    Coded by <a href="#">&copy;Morgan Katjounis</a>.
+  </div>
+</body>
+</html>

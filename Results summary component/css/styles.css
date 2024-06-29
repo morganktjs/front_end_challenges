@@ -1,0 +1,232 @@
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100% !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto;
+    
+    font-family: 'Hanken Grotesk', serif;
+    font-weight: 500;
+}
+
+.summary {
+    display: grid; 
+
+    text-align: center;
+    justify-self: center;
+    
+
+    background-color: hsl(0, 0%, 100%);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 0px) {
+    .summary {
+        width: 100%;
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    .summary {
+        width: 75%;
+        max-width: 725px;
+        aspect-ratio: 1 / 0.70;
+        
+        margin-top: auto;
+        margin-bottom: auto;
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+.summary-header {
+    overflow: hidden;
+
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    
+    display: grid; 
+    grid-template-columns: 1fr;
+
+    justify-content: center;
+}
+
+@media only screen and (min-width: 0px) {
+    .summary-header {
+        padding: 5%;
+        gap: 10px;
+
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    .summary-header {
+        padding: 10%;
+        gap: 20px;
+        
+        grid-template-rows: 1fr 4fr 1fr 2fr;
+
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+    }
+} 
+
+.summary-header-title {
+    font-size: 22px;
+
+    opacity: 70%;
+}
+
+.summary-header-mark-circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.summary-header-subtitle{
+    font-size: 30px;
+    font-weight: 700;
+
+    align-self: center;
+}
+
+.summary-header-resume{
+    opacity: 70%;
+
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+@media only screen and (min-width: 0px) {
+    .summary-details {
+        padding: 5%;
+
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    .summary-details {
+        padding: 10%;
+        
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.1);
+    }
+} 
+
+.summary-details {
+    text-align: left;
+    overflow: hidden;
+
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 5fr 2fr;
+    justify-self: stretch;
+
+    background-color: hsl(0, 0%, 100%);
+}
+
+.summary-details-title {
+    font-weight: 900;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: auto;
+    opacity: 75%;
+}
+
+#summary-details-rows {
+    justify-self: stretch;
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px
+}
+
+.summary-details-row {
+    min-height: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 2fr;
+    border-radius: 12px;
+    border: 0;
+}
+
+.summary-details-row-mark {
+    font-weight: 900;
+    opacity: 75%;
+}
+
+.summary-details-row-icon {
+    justify-self: center;
+    margin-top: 5px;
+}
+
+.summary-details-row-title {
+    font-weight: 700; 
+    opacity: 80%;
+    margin-right: auto;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 700;
+
+    height: 55%;
+    min-height: 50px;
+
+    margin-top: 40px;
+
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 30%, 27%);
+
+    border-radius: 28px;
+    border: 0;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+    cursor:pointer;
+}
+
+.attribution { 
+    font-size: 10px; 
+    text-align: center;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
